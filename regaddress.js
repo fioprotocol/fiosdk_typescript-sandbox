@@ -1,19 +1,24 @@
 const {FIOSDK} = require('@fioprotocol/fiosdk')
-fetch = require('node-fetch')
+var fetch = require('node-fetch')
 const fetchJson = async (uri, opts = {}) => {
   return fetch(uri, opts)
 }
 
-const apiNode = 'https://fiotestnet.blockpane.com/v1/' // See https://github.com/fioprotocol/fio.mainnet for complete list of API endpoints
-const privateKey = '5HpJPnQmpbnTxaJbTEcMDj51DSbTW6hzQ41h1L4XcxXW83AX9Vw' // Get from http://monitor.testnet.fioprotocol.io:3000/#createKey and then faucet to add tokens: http://monitor.testnet.fioprotocol.io:3000/#faucet
-const fioHandle = 'username12345@regtest' // Use regtest domain on Testnet
+// See https://github.com/fioprotocol/fio.mainnet for complete list of API endpoints
+const apiNode = 'https://fiotestnet.blockpane.com/v1/' 
+
+// Get from http://monitor.testnet.fioprotocol.io:3000/#createKey and then faucet to add tokens: http://monitor.testnet.fioprotocol.io:3000/#faucet
+const privateKey = '5HpJPnQmpbnTxaJbTEcMDj51DSbTW6hzQ41h1L4XcxXW83AX9Vw'
+
+// Use regtest domain on Testnet
+const fioHandle = 'username123456789999@regtest'
 
 const publicKey = FIOSDK.derivedPublicKey(privateKey).publicKey
 const account = FIOSDK.accountHash(publicKey).accountnm
 
-action = 'regaddress'
-contract = 'fio.address'
-actionData = 
+var action = 'regaddress'
+var contract = 'fio.address'
+var actionData = 
 {
   fio_address: fioHandle,
   owner_fio_public_key: '',
