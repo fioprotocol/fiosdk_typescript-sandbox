@@ -22,7 +22,7 @@ var actionData =
   fio_address: 'user10006@regtest',
   public_addresses: [
     {
-      chain_code" 'ETH',
+      chain_code: 'ETH',
       token_code: 'ETH',
       public_address: '0xab5801a7d398351b8be11c439e05c5b3259aec9b'
     }    
