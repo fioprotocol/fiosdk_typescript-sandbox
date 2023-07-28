@@ -1,4 +1,4 @@
-// Register FIO Handle Action
+// Remove All Mapped Public Addresses Action
 var action = 'remalladdr'
 var contract = 'fio.address'
 
