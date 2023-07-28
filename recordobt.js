@@ -1,4 +1,4 @@
-// Register FIO Handle Action
+// Record FIO Data Action
 var action = 'recordobt'
 var contract = 'fio.reqobt'
 
