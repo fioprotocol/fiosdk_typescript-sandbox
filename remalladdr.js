@@ -1,4 +1,4 @@
-// Remove All Mapped Public Addresses Action
+// Transfer FIO Tokens Action
 var action = 'remalladdr'
 var contract = 'fio.address'
 
