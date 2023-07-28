@@ -1,4 +1,4 @@
-// Transfer FIO Tokens Action
+// Transfer Locked FIO Tokens Action
 var action = 'remalladdr'
 var contract = 'fio.address'
 
