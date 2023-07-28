@@ -1,11 +1,19 @@
+// Register FIO Handle Action (regaddress)
+// Edit this file then type node regaddress.js in Terminal to run
+
+// API endpoint, see https://github.com/fioprotocol/fio.mainnet for complete list
+const apiNode = 'https://fiotestnet.blockpane.com/v1/' 
+// FIO Chain Testnet private key. Get one from http://monitor.testnet.fioprotocol.io:3000/#createKey
+// and then add tokens via faucet: http://monitor.testnet.fioprotocol.io:3000/#faucet
+const privateKey = '5HpJPnQmpbnTxaJbTEcMDj51DSbTW6hzQ41h1L4XcxXW83AX9Vw'
+
+
+
 const {FIOSDK} = require('@fioprotocol/fiosdk')
 var fetch = require('node-fetch')
 const fetchJson = async (uri, opts = {}) => {
   return fetch(uri, opts)
 }
-
-// See https://github.com/fioprotocol/fio.mainnet for complete list of API endpoints
-const apiNode = 'https://fiotestnet.blockpane.com/v1/' 
 
 // Get from http://monitor.testnet.fioprotocol.io:3000/#createKey and then faucet to add tokens: http://monitor.testnet.fioprotocol.io:3000/#faucet
 const privateKey = '5HpJPnQmpbnTxaJbTEcMDj51DSbTW6hzQ41h1L4XcxXW83AX9Vw'
