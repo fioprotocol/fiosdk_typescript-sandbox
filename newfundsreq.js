@@ -1,4 +1,4 @@
-// Register FIO Handle Action
+// New FIO Request Action
 var action = 'newfundsreq'
 var contract = 'fio.reqobt'
 
