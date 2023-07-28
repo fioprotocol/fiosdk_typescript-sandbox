@@ -1,4 +1,4 @@
-// Register FIO Handle Action
+// Map Public Address Action
 var action = 'addaddress'
 var contract = 'fio.address'
 
