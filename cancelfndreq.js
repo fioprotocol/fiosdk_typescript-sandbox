@@ -1,4 +1,4 @@
-// Register FIO Handle Action
+// Cancel FIO Request Action
 var action = 'cancelfndreq'
 var contract = 'fio.reqobt'
 
