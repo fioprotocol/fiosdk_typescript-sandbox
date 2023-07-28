@@ -19,16 +19,15 @@ const account = FIOSDK.accountHash(publicKey).accountnm
 // Action parameters
 var actionData = 
 {
-  payee_public_key: 'FIO7vveGx3JA5FMsTVCUQgPtZUuVPj39ouYEMz385x1nADmj3PNUP',
+  payee_public_key: 'FIO5C43JT2LUnSMJUmp7jL5U2XY7dnFbPbh4Zv8iE4oeADx5SPC42',
   can_vote: 0,
   periods: [
     {
-      "duration": 86400,
-      "amount": 1000000000
+      duration: 86400,
+      amount: 1000000000
     }
-  ]
+  ],
   amount: 1000000000,
-  can_vote
   max_fee: 10000000000000,
   tpid: '',
   actor: account
