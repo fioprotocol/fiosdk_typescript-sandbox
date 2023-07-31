@@ -1,4 +1,4 @@
-// Register FIO Handle Action
+// Renew FIO Handle Action
 var action = 'renewaddress'
 var contract = 'fio.address'
 
