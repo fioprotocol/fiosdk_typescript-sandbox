@@ -1,6 +1,6 @@
 // Stake FIO Tokens Action
 var action = 'stakefio'
-var contract = 'fio.token'
+var contract = 'fio.staking'
 
 const {FIOSDK} = require('@fioprotocol/fiosdk')
 var fetch = require('node-fetch')
