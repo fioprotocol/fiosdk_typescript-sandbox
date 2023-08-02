@@ -20,8 +20,9 @@ const account = FIOSDK.accountHash(publicKey).accountnm
 var actionData = 
 {
   amount: 10000000000,
+  fio_address: '',
   max_fee: 10000000000000,
-  tpid: '',
+  tpid: 'smoketestproxy1@fiotestnet',
   actor: account
 }
 
