@@ -20,6 +20,7 @@ const account = FIOSDK.accountHash(publicKey).accountnm
 var actionData = 
 {
   fio_domain: 'regtest2023',
+  is_public: 1,
   max_fee: 10000000000000,
   tpid: '',
   actor: account
