@@ -1,4 +1,4 @@
-// Remove all mapped NFTs Action
+// Remove All Mapped NFTs Action
 var action = 'remallnfts'
 var contract = 'fio.address'
 
