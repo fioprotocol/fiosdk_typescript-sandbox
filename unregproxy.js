@@ -1,5 +1,5 @@
-// Proxy Vote Action
-var action = 'regproxy'
+// Unregister Proxy Action
+var action = 'unregproxy'
 var contract = 'eosio'
 
 const {FIOSDK} = require('@fioprotocol/fiosdk')
@@ -8,7 +8,7 @@ const fetchJson = async (uri, opts = {}) => {
   return fetch(uri, opts)
 }
 
-// EDIT this section then type node regproxy.js in Terminal to run
+// EDIT this section then type node unregproxy.js in Terminal to run
 // API endpoint, see https://github.com/fioprotocol/fio.mainnet for complete list
 const apiNode = 'https://fiotestnet.blockpane.com/v1/' 
 // FIO Chain Testnet private key. Get one from http://monitor.testnet.fioprotocol.io:3000/#createKey
