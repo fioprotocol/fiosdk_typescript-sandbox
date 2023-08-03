@@ -1,4 +1,4 @@
-// Proxy Vote Action
+// Register Proxy Action
 var action = 'regproxy'
 var contract = 'eosio'
 
