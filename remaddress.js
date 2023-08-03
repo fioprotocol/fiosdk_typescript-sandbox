@@ -1,5 +1,5 @@
-// Register FIO Handle Action
-var action = 'regaddress'
+// Remove Mapped Public Address Action
+var action = 'remaddress'
 var contract = 'fio.address'
 
 const {FIOSDK} = require('@fioprotocol/fiosdk')
@@ -8,7 +8,7 @@ const fetchJson = async (uri, opts = {}) => {
   return fetch(uri, opts)
 }
 
-// EDIT this section then type node regaddress.js in Terminal to run
+// EDIT this section then type node remaddress.js in Terminal to run
 // API endpoint, see https://github.com/fioprotocol/fio.mainnet for complete list
 const apiNode = 'https://fiotestnet.blockpane.com/v1/' 
 // FIO Chain Testnet private key. Get one from http://monitor.testnet.fioprotocol.io:3000/#createKey
@@ -20,7 +20,13 @@ const account = FIOSDK.accountHash(publicKey).accountnm
 var actionData = 
 {
   fio_address: 'user10006@regtest',
-  owner_fio_public_key: '',
+  public_addresses: [
+    {
+      chain_code: 'ETH',
+      token_code: 'ETH',
+      public_address: '0xab5801a7d398351b8be11c439e05c5b3259aec9b'
+    }    
+    ],
   max_fee: 10000000000000,
   tpid: '',
   actor: account

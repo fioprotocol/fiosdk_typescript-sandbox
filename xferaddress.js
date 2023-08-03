@@ -1,5 +1,5 @@
-// Register FIO Handle Action
-var action = 'regaddress'
+// Transfer Ownership of FIO Handle Action
+var action = 'xferaddress'
 var contract = 'fio.address'
 
 const {FIOSDK} = require('@fioprotocol/fiosdk')
@@ -8,7 +8,7 @@ const fetchJson = async (uri, opts = {}) => {
   return fetch(uri, opts)
 }
 
-// EDIT this section then type node regaddress.js in Terminal to run
+// EDIT this section then type node xferaddress.js in Terminal to run
 // API endpoint, see https://github.com/fioprotocol/fio.mainnet for complete list
 const apiNode = 'https://fiotestnet.blockpane.com/v1/' 
 // FIO Chain Testnet private key. Get one from http://monitor.testnet.fioprotocol.io:3000/#createKey
@@ -20,7 +20,7 @@ const account = FIOSDK.accountHash(publicKey).accountnm
 var actionData = 
 {
   fio_address: 'user10006@regtest',
-  owner_fio_public_key: '',
+  new_owner_fio_public_key: "FIO8PRe4WRZJj5mkem6qVGKyvNFgPsNnjNN6kPhh6EaCpzCVin5Jj",
   max_fee: 10000000000000,
   tpid: '',
   actor: account

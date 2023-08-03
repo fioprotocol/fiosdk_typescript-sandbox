@@ -1,6 +1,6 @@
-// Register FIO Handle Action
-var action = 'regaddress'
-var contract = 'fio.address'
+// Register Block Producer Action
+var action = 'regproducer'
+var contract = 'eosio'
 
 const {FIOSDK} = require('@fioprotocol/fiosdk')
 var fetch = require('node-fetch')
@@ -8,7 +8,7 @@ const fetchJson = async (uri, opts = {}) => {
   return fetch(uri, opts)
 }
 
-// EDIT this section then type node regaddress.js in Terminal to run
+// EDIT this section then type node regproducer.js in Terminal to run
 // API endpoint, see https://github.com/fioprotocol/fio.mainnet for complete list
 const apiNode = 'https://fiotestnet.blockpane.com/v1/' 
 // FIO Chain Testnet private key. Get one from http://monitor.testnet.fioprotocol.io:3000/#createKey
@@ -20,9 +20,10 @@ const account = FIOSDK.accountHash(publicKey).accountnm
 var actionData = 
 {
   fio_address: 'user10006@regtest',
-  owner_fio_public_key: '',
-  max_fee: 10000000000000,
-  tpid: '',
+  fio_pub_key: 'FIO7tHihSLJVRQ2HsiVGTXAh3RgfXQvVVPpMm8pwQtiTHQHPnY5dH',
+  url: 'https://bobp.io/',
+  location: 80,
+  max_fee: 100000000000,
   actor: account
 }
 

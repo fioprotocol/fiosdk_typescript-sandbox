@@ -1,6 +1,6 @@
-// Register FIO Handle Action
-var action = 'regaddress'
-var contract = 'fio.address'
+// Unstake FIO Tokens Action
+var action = 'unstakefio'
+var contract = 'fio.staking'
 
 const {FIOSDK} = require('@fioprotocol/fiosdk')
 var fetch = require('node-fetch')
@@ -8,7 +8,7 @@ const fetchJson = async (uri, opts = {}) => {
   return fetch(uri, opts)
 }
 
-// EDIT this section then type node regaddress.js in Terminal to run
+// EDIT this section then type node unstakefio.js in Terminal to run
 // API endpoint, see https://github.com/fioprotocol/fio.mainnet for complete list
 const apiNode = 'https://fiotestnet.blockpane.com/v1/' 
 // FIO Chain Testnet private key. Get one from http://monitor.testnet.fioprotocol.io:3000/#createKey
@@ -19,8 +19,8 @@ const account = FIOSDK.accountHash(publicKey).accountnm
 // Action parameters
 var actionData = 
 {
-  fio_address: 'user10006@regtest',
-  owner_fio_public_key: '',
+  amount: 10000000000,
+  fio_address: '',
   max_fee: 10000000000000,
   tpid: '',
   actor: account
