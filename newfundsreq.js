@@ -26,8 +26,7 @@ var actionData =
   chainCode: 'ETH',
   tokenCode: 'USDT',
   memo: 'Invoice 1',
-  maxFee: 10000000000000,
-  payerFioPublicKey: 'FIO7vveGx3JA5FMsTVCUQgPtZUuVPj39ouYEMz385x1nADmj3PNUP',
+  maxFee: 10000000000000
 }
 
 // Push transaction
