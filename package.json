@@ -1,5 +1,5 @@
 {
-    "name": "fiosdk_typescript-sandbox",
+    "name": "@fioprotocol/fiosdk_typescript-sandbox",
     "version": "1.0.0",
     "stackblitz": {
         "startCommand": "export NODE_OPTIONS=--openssl-legacy-provider"
