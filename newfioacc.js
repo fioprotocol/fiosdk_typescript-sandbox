@@ -19,17 +19,17 @@ const account = FIOSDK.accountHash(publicKey).accountnm
 // Action parameters
 var actionData = 
 {
-	fio_public_key: 'FIO6WCW5W3cH8v6B35aHtncTgGg75d6A2cg4i2zkqcLmc4z1J4NFE',
-	owner: {
-		'threshold': 1,
-		'keys': [],
-		'waits': [],
-		'accounts': []
-	},
-	active: {
-    'threshold': 1, 
+  fio_public_key: 'FIO6WCW5W3cH8v6B35aHtncTgGg75d6A2cg4i2zkqcLmc4z1J4NFE',
+  owner: {
+    'threshold': 1,
     'keys': [],
-    'waits': [],  
+    'waits': [],
+    'accounts': []
+  },
+  active: {
+    'threshold': 1,
+    'keys': [],
+    'waits': [],
     'accounts': []
   },
   max_fee: 10000000000000,
