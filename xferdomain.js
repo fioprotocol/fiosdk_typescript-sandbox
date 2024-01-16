@@ -10,7 +10,7 @@ const fetchJson = async (uri, opts = {}) => {
 
 // EDIT this section then type node xferdomain.js in Terminal to run
 // API endpoint, see https://github.com/fioprotocol/fio.mainnet for complete list
-const apiNode = 'https://fiotestnet.blockpane.com/v1/' 
+const apiNode = 'https://test.fio.eosusa.io/v1/'
 // FIO Chain Testnet private key. Get one from http://monitor.testnet.fioprotocol.io:3000/#createKey
 // and then add tokens via faucet: http://monitor.testnet.fioprotocol.io:3000/#faucet
 const privateKey = '5KBXb9Xhte8gDxSHB5tCgx47M1nmC9CddYCdx2QJ5uwSo3X8CgS'
